@@ -2,6 +2,13 @@ pipeline {
     agent any
 
     stages {
+        stage('Test Shell') {
+            steps {
+                echo 'Testing shell...'
+                sh 'echo "Shell is working"'
+            }
+        }
+
         stage('Build') {
             steps {
                 echo 'Building C# project...'
