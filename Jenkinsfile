@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     environment {
-        TMPDIR = '/tmp'
+        PATH+EXTRA = '/usr/local/share/dotnet'
     }
 
     stages {
@@ -16,14 +16,14 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building C# project...'
-                sh '/opt/homebrew/bin/dotnet build --configuration Release'
+                sh 'dotnet build --configuration Release'
             }
         }
 
         stage('Test') {
             steps {
                 echo 'Running tests...'
-                sh '/opt/homebrew/bin/dotnet test'
+                sh 'dotnet test'
             }
         }
 
