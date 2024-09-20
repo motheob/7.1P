@@ -1,0 +1,14 @@
+/Users/motheoboikhutso/Desktop/7.1P/7.1P/obj/Debug/net8.0/7.1P.GeneratedMSBuildEditorConfig.editorconfig
+/Users/motheoboikhutso/Desktop/7.1P/7.1P/obj/Debug/net8.0/7.1P.AssemblyInfoInputs.cache
+/Users/motheoboikhutso/Desktop/7.1P/7.1P/obj/Debug/net8.0/7.1P.AssemblyInfo.cs
+/Users/motheoboikhutso/Desktop/7.1P/7.1P/obj/Debug/net8.0/7.1P.csproj.CoreCompileInputs.cache
+/Users/motheoboikhutso/Desktop/7.1P/7.1P/bin/Debug/net8.0/7.1P
+/Users/motheoboikhutso/Desktop/7.1P/7.1P/bin/Debug/net8.0/7.1P.deps.json
+/Users/motheoboikhutso/Desktop/7.1P/7.1P/bin/Debug/net8.0/7.1P.runtimeconfig.json
+/Users/motheoboikhutso/Desktop/7.1P/7.1P/bin/Debug/net8.0/7.1P.dll
+/Users/motheoboikhutso/Desktop/7.1P/7.1P/bin/Debug/net8.0/7.1P.pdb
+/Users/motheoboikhutso/Desktop/7.1P/7.1P/obj/Debug/net8.0/7.1P.dll
+/Users/motheoboikhutso/Desktop/7.1P/7.1P/obj/Debug/net8.0/refint/7.1P.dll
+/Users/motheoboikhutso/Desktop/7.1P/7.1P/obj/Debug/net8.0/7.1P.pdb
+/Users/motheoboikhutso/Desktop/7.1P/7.1P/obj/Debug/net8.0/7.1P.genruntimeconfig.cache
+/Users/motheoboikhutso/Desktop/7.1P/7.1P/obj/Debug/net8.0/ref/7.1P.dll
