@@ -1,11 +1,6 @@
 pipeline {
     agent any
 
-    environment {
-        // Manually concatenate PATH with the additional directory
-        PATH = "/usr/local/share/dotnet:${env.PATH}"
-    }
-
     stages {
         stage('Test Shell') {
             steps {
@@ -17,14 +12,14 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building C# project...'
-                sh 'dotnet build --configuration Release'
+                sh '/opt/homebrew/bin/dotnet build --configuration Release'
             }
         }
 
         stage('Test') {
             steps {
                 echo 'Running tests...'
-                sh 'dotnet test'
+                sh '/opt/homebrew/bin/dotnet test'
             }
         }
 
