@@ -1,5 +1,5 @@
-# Use the official .NET image as a build environment
-FROM mcr.microsoft.com/dotnet/sdk:6.0 AS build-env
+# Use the .NET 8.0 SDK image as the build environment (preview version)
+FROM mcr.microsoft.com/dotnet/sdk:8.0-preview AS build-env
 WORKDIR /app
 
 # Copy csproj and restore as distinct layers
@@ -10,8 +10,8 @@ RUN dotnet restore
 COPY . ./
 RUN dotnet publish -c Release -o out
 
-# Build runtime image
-FROM mcr.microsoft.com/dotnet/aspnet:6.0
+# Use the .NET 8.0 runtime image to run the application
+FROM mcr.microsoft.com/dotnet/aspnet:8.0-preview
 WORKDIR /app
 COPY --from=build-env /app/out .
 ENTRYPOINT ["dotnet", "7.1P.dll"]
