@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Test Shell') {
             steps {
-                echo 'Testing shell...'
+                echo 'Testing shell....'
                 sh 'echo "Shell is working"'
             }
         }
