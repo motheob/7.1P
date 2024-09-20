@@ -2,7 +2,8 @@ pipeline {
     agent any
 
     environment {
-        PATH+EXTRA = '/usr/local/share/dotnet'
+        // Manually concatenate PATH with the additional directory
+        PATH = "/usr/local/share/dotnet:${env.PATH}"
     }
 
     stages {
