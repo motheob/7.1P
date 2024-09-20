@@ -26,14 +26,14 @@ pipeline {
         stage('Build Docker Image') {
             steps {
                 echo 'Building Docker image...'
-                sh 'docker build -t mycsharpapp:latest .'
+                sh '/usr/local/bin/docker run -d -p 8080:80 mycsharpapp:latest .'
             }
         }
 
         stage('Deploy') {
             steps {
                 echo 'Deploying Docker container...'
-                sh 'docker run -d -p 8080:80 mycsharpapp:latest'
+                sh '/usr/local/bin/docker run -d -p 8080:80 mycsharpapp:latest'
             }
         }
     }
