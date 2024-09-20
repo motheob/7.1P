@@ -1,6 +1,10 @@
 pipeline {
     agent any
 
+    environment {
+        TMPDIR = '/tmp'
+    }
+
     stages {
         stage('Test Shell') {
             steps {
