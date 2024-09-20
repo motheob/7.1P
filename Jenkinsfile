@@ -26,7 +26,7 @@ pipeline {
         stage('Build Docker Image') {
             steps {
                 echo 'Building Docker image...'
-                sh '/usr/local/bin/docker build -t 8080:80 mycsharpapp:latest .'
+                sh '/usr/local/bin/docker build -t mycsharpapp:latest .'
             }
         }
 
